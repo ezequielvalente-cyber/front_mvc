@@ -74,7 +74,7 @@ async function cadastrarCliente() {
     };
 
     try {
-        const res = await fetch("http://localhost:3000/clientes", {
+        const res = await fetch("http://localhost:3000/api/clientes", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
@@ -124,7 +124,7 @@ async function cadastrarUsuario() {
     }
 
     try {
-        const res = await fetch("http://localhost:3000/usuarios", {
+        const res = await fetch("http://localhost:3000/api/users", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
